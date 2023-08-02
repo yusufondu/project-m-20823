@@ -1,4 +1,4 @@
-# mercedes_project
+# M project
 
 ## Project setup
 ```
