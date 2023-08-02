@@ -1,32 +1,30 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <header>
+      <img src="@/assets/logo.svg" alt="mercedes logo" />
+    </header>
+    <router-view />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
-nav {
-  padding: 30px;
+header {
+  padding: 50px 0 20px 0;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
