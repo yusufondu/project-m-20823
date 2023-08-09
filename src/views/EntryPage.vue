@@ -48,7 +48,6 @@ export default {
       });
     },
   },
-
   created() {
     const storedCars = JSON.parse(localStorage.getItem("cars"));
     if (storedCars) {
