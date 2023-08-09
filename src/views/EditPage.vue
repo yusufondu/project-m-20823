@@ -58,9 +58,9 @@ export default {
   },
   created() {
     const carId = parseInt(this.$route.params.id);
-
-    this.car = mockData.find((car) => car.ID === carId);
-
+    this.car =
+      JSON.parse(localStorage.getItem("cars"))[carId - 1] ||
+      mockData.find((car) => car.ID === carId);
     this.originalCar = { ...this.car };
   },
   computed: {
